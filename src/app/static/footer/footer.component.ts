@@ -9,7 +9,8 @@ import { dataBtn, btns } from 'src/app/static/footer/footer.params';
   styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent {
-  modalHref!: BsModalRef;
+  private modalHref!: BsModalRef;
+
   constructor(private modalService: BsModalService) {}
   public dataBtns: btns = dataBtn;
 
